@@ -123,7 +123,7 @@ nvm()
         cd "node-$VERSION" && \
         ./configure --prefix="$NVM_DIR/$VERSION" && \
         make && \
-        rm -f "$NVM_DIR/$VERSION" 2>/dev/null && \
+        rm -rf "$NVM_DIR/$VERSION" 2>/dev/null && \
         make install
         )
       then
